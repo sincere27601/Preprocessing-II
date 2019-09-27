@@ -14,7 +14,7 @@
 @sandy-beach: #FFEBCD;
 
 // Mixins in here
-.nav(@justify, @color, @text-decoration){
+.nav(@justify-content, @color, @text-decoration){
 	display: flex;
 	justify-content: @justify;
     color: @color;
@@ -22,6 +22,16 @@
 }
 // usage
 .nav(space-evenly, black, none);
+
+.btn(@background-color, @border-radius, @cursor){
+    background-color: @background-color;
+    border-radius: @border-radius;
+    cursor: @cursor;
+
+    .btn(teal, 40px, pointer);
+}
+
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -118,12 +128,10 @@ table {
     margin: 0 auto;
   }
   // Navigation Styles here
-  nav {
+    nav {
     display: flex;
      margin: 40px 15px 10px 100px;
     
-    
-
     a{
     font-size: 15px;
     
@@ -213,11 +221,9 @@ footer{
     height: 70px;
 }
 .btn{
- background-color: teal;
- border-radius: 40px;
+ 
  font-size: 27px;
   margin: 20px 20px;
-  cursor: pointer;
   color: white;
 }
 h4{
