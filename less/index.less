@@ -14,13 +14,14 @@
 @sandy-beach: #FFEBCD;
 
 // Mixins in here
-.nav(@justify, @color){
+.nav(@justify, @color, @text-decoration){
 	display: flex;
 	justify-content: @justify;
-	color: @color;
+    color: @color;
+    text-decoration: @text-decoration;
 }
 // usage
-.nav(space-evenly, black);
+.nav(space-evenly, black, none);
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -119,14 +120,11 @@ table {
   // Navigation Styles here
   nav {
     display: flex;
-    justify-content: space-evenly;
-    margin: 40px 15px 10px 100px;
-    text-decoration: none;
-    color: black;
+     margin: 40px 15px 10px 100px;
+    
+    
 
     a{
-    text-decoration: none;
-    color: black;
     font-size: 15px;
     
     }
