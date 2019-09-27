@@ -34,6 +34,10 @@
      }
      a{
        text-decoration: none;
+       color: black;
+       display: block;
+      
+      margin: 30px 10px 20px 10px;
        
      }
    }
@@ -190,7 +194,7 @@
           p{
             @media @mobile{
               width: 100%;
-              border: 1px solid green;
+              
               margin-right: 0;
             }
           }
@@ -237,7 +241,7 @@
          @media @mobile{
            display: flex;
            flex-direction: column-reverse;
-           background-color: red;
+           
          }
        }
      
@@ -258,10 +262,15 @@
          justify-content: space-between;
      
          .destination {
-           width: 30%;
+           width: 100%;
            margin-bottom: 30px;
          }
-         
+         @media @mobile{
+          display: flex;
+          flex-direction: column;
+          
+        }
+        }
            
     // home
    
@@ -279,7 +288,9 @@
       color: black;
       background-color: teal;
       border-radius: 25px;
-    }
+    
+   }
+  
     h4{
         font-size: 30px;
         
@@ -287,4 +298,4 @@
     h2{
         font-size: 35px;
     }
-  }
+  

@@ -12,6 +12,9 @@
 }
 .main-nav a {
   text-decoration: none;
+  color: black;
+  display: block;
+  margin: 30px 10px 20px 10px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
       v2.0 | 20110126
@@ -217,7 +220,6 @@ nav a {
 @media (max-width: 500px) {
   .home .content-section p {
     width: 100%;
-    border: 1px solid green;
     margin-right: 0;
   }
 }
@@ -258,7 +260,6 @@ nav a {
   .inverse-content {
     display: flex;
     flex-direction: column-reverse;
-    background-color: red;
   }
 }
 .content-destination {
@@ -275,26 +276,32 @@ nav a {
   justify-content: space-between;
 }
 .content-pick .destination {
-  width: 30%;
+  width: 100%;
   margin-bottom: 30px;
 }
-.content-pick footer {
+@media (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: tan;
   height: 70px;
 }
-.content-pick .btn {
+.btn {
   font-size: 27px;
   margin: 20px 20px;
   color: black;
   background-color: teal;
   border-radius: 25px;
 }
-.content-pick h4 {
+h4 {
   font-size: 30px;
 }
-.content-pick h2 {
+h2 {
   font-size: 35px;
 }
