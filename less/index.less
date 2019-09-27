@@ -14,6 +14,13 @@
 @sandy-beach: #FFEBCD;
 
 // Mixins in here
+.nav(@justify, @color){
+	display: flex;
+	justify-content: @justify;
+	color: @color;
+}
+// usage
+.nav(space-evenly, black);
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -113,10 +120,16 @@ table {
   nav {
     display: flex;
     justify-content: space-evenly;
-    
-    margin: 10px 15px 10px 5px;
+    margin: 40px 15px 10px 100px;
     text-decoration: none;
     color: black;
+
+    a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    
+    }
 }
 h1
 
